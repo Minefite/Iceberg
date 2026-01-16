@@ -29,6 +29,17 @@ subprojects {
 			name "CurseMaven"
 			url "https://www.cursemaven.com"
 		}
+		exclusiveContent {
+			forRepository {
+				maven {
+					name = "Modrinth"
+					url = "https://api.modrinth.com/maven"
+				}
+			}
+			filter {
+				includeGroup "maven.modrinth"
+			}
+		}
 	}
 
 	dependencies {
